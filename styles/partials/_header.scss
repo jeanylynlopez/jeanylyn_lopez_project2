@@ -1,0 +1,92 @@
+// ===============
+// HEADER AND NAVIGATION
+// ===============
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+// ===============
+// HEADER
+// ===============
+
+header {
+    background-image: url(../assets/image-1.jpeg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-color: whitesmoke;
+    padding: 1px;
+}
+
+// ===============
+// NAVIGATION
+// ===============
+
+header section {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.header-nav {
+    display: flex;
+    .nav__item {
+        padding-left: 25px;
+        .nav__link {
+            text-decoration: none;
+            .nav__heading {
+                font-weight: 600;
+            }
+        }  
+    }
+}
+
+// ===============
+// TEXT
+// ===============
+
+.header__content {
+    position: absolute;
+    top: 35%;
+    left: 60%;
+    h3 {
+        .header__content--bigtext {
+            font-size: 80px;
+        }
+    }
+}
+
+// ===============
+// BUTTON
+// ===============
+
+.header__content {
+    h3 {
+        line-height: 30px;
+    }
+    button {
+        margin-top: -15px;
+    }
+}
+
+.btn {
+    background-color: rgba(255,255,255,10);
+    border: 1px solid;
+    text-align: center;
+    border-radius: 30px;
+    width: 150px;
+    text-align: center;
+    display: block;
+    h3 {
+     line-height: 0;
+     letter-spacing: 5px;
+     } 
+}
+

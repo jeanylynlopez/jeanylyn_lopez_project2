@@ -1,0 +1,112 @@
+// ================        
+// MAIN FOOTER
+// ================ 
+
+// ===============
+// CONTACT FOOTER SECTION
+// ===============
+.main-footer {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin: 100px auto;
+    .footer-section {
+        width: 30%;
+        padding: 10px;
+        // margin: 0px 10px;
+    }
+}
+
+.footer__item {
+    .footer__text {
+        line-height: 25px;
+    }
+}
+
+// .footer-form span {
+//     position: relative;
+//     span::after {
+//         content: "hi";
+//         position: absolute;
+//     }
+// }
+
+.footer-form__input {
+    width: 85%;
+    height: 30px;
+    font-family: Lato;
+    font-size: 16px;
+    padding-left: 10px;
+    border: 1px solid rgb(42, 42, 42);
+}
+
+.footer-form__button {
+    height: 30px;
+    background: none;
+    border: none;
+    margin-left: -40px;
+    font-size: 18px;
+
+}
+
+// ===============
+// ABOUT US FOOTER SECTION
+// ===============
+
+.about-us {
+    margin-right: 60px;
+}
+
+// ===============
+// NAV FOOTER
+// ===============
+
+ .nav .footer-section__heading {
+    text-align: center;
+}
+
+.footer-nav {
+    width: 30%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -40px;
+    justify-content: space-around;
+    .nav__link {
+        text-decoration: none;
+    }
+}
+
+// ================        
+// SECOND FOOTER
+// ================
+
+.second-footer {
+    text-align: center;
+    background-color: rgb(42, 42, 42);
+    padding: 1px;
+    .second-footer__text {
+        color: rgb(238, 237, 237);
+        font-size: 16px;
+        margin: 5px 0;
+    }
+}
+
+// ===============
+// SOCIAL FOOTER 
+// ===============
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    height: 150px;
+    position: fixed;
+    right: 0;
+    top: 35%;
+    .footer-social__icon {
+        font-size: 20px;
+        color: rgb(132, 132, 132);
+    }
+}

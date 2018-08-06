@@ -1,0 +1,102 @@
+// ===============
+// LATEST NEWS SECTION
+// ===============
+
+.latest {
+    margin: 100px 0; 
+    .image-list {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.image-list__item {
+    .image-list__link {
+        text-decoration: none;
+        .image-list__heading--colour, .image-list__icon {
+            color: $highlight-color;
+        }
+    }
+}
+
+// ===============
+// FORM / ASK A QUESTION SECTION 
+// ===============
+
+
+// ???how come input text is transparent???
+
+.question {
+    background-color: rgb(242, 176, 148);
+    padding: 50px;
+}
+
+.form__input {
+    border-top: 2px solid rgb(42, 42, 42);
+    border-bottom: 2px solid rgb(42, 42, 42);
+    border-right: none;
+    border-left: none;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    background-color: rgb(242, 176, 148);
+    color: rgb(42, 42, 42);
+} 
+
+.form__submit {
+    display: block;
+    margin: 20px auto;
+    background-color: rgba(255,255,255,10);
+    border: 1px solid;
+    text-align: center;
+    border-radius: 30px;
+    width: 150px;
+    text-align: center;
+    display: block;
+    color: rgb(42, 42, 42);
+    letter-spacing: 5px;
+}
+
+// ===============
+// ALL PICTURES SECTION
+// ===============
+
+// ???work on the hovers???
+// ???center the box???
+
+.latest-pics {
+    // margin: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    nav {
+        // width: 360px;
+        width: 20%;
+        height: 606px;
+    }
+}
+
+.pics-nav {
+    background-color: rgb(96, 96, 96);
+    padding: 20px;
+    text-align: center;
+    .pics-nav__link {
+        text-decoration: none;
+        .pics-nav__heading {
+            color: rgb(255, 255, 255);
+        }
+    }
+}
+
+.pics {
+    display: flex;
+    flex-wrap: wrap;
+    .pics__item {
+        // width: 20%;
+        .pics__image {
+            // width: 100%;
+        }
+    }
+}
+

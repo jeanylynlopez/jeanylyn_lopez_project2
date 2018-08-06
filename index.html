@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Photography</title>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.12/js/all.js" integrity="sha384-Voup2lBiiyZYkRto2XWqbzxHXwzcm4A5RfdfG6466bu5LqjwwrjXCMBQBLMWh7qR"
-        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:400,600,700|Lato:400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
-</head>
+</head> 
 <body>
 
 <!-- ===============
 HEADER & NAVIGATION
 =============== -->
 
-        <header class="header">
+    <header class="header">
+        <section class="wrapper">
             <h2 class="header__heading">Photography</h2>
             <nav>
-                <ul class="nav">
+                <ul class="header-nav">
                     <li class="nav__item">
                         <a href="#" class="nav__link">
                             <h3 class="nav__heading">Home</h3>
@@ -26,7 +28,7 @@ HEADER & NAVIGATION
                     </li>
                     <li class="nav__item">
                         <a href="#" class="nav__link">
-                            <h3 class="">Gallery</h3>
+                            <h3 class="nav__heading">Gallery</h3>
                         </a>
                     </li>
                     <li class="nav__item">
@@ -46,52 +48,53 @@ HEADER & NAVIGATION
                     </li>
                 </ul>
             </nav>
-            <div class="header__content">
-                <h4 class="header__content--bigtext">Welcome</h4>
-                <h3 class="header__content--smalltext">To my photography website</h3>
-                <button class="btn">start</button>
-            </div>
-        </header>
+        </section>
+        <div class="header__content">
+            <h3><span class="header__content--bigtext">Welcome</span><br>To my photography website</h3>
+            <button class="btn"><h3>start</h3></button>
+        </div>
+    </header>
 
 <!-- ===============
 WELCOME TO PHOTOGRAPHY SECTION 
 =============== -->
-        <main>
-            <section class="section about">
-                <h1 class="section__heading">Welcome to photography</h1>
-                <article class="article">
-                    <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus reiciendis nihil harum est architecto temporibus possimus neque iste itaque voluptatem accusantium pariatur distinctio perspiciatis rerum quia unde omnis quod error commodi. Laborum qui corrupti reiciendis similique, laudantium quam culpa incidunt?</p>
-                    <button class="article btn">More</button>
-                </article>
-            </section>
+    <main>
+        <section class="section about wrapper">
+            <h1 class="section__heading">Welcome to <span>photography</span></h1>
+            <article class="article">
+                <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus reiciendis nihil harum est architecto temporibus possimus neque iste itaque voluptatem accusantium pariatur distinctio perspiciatis rerum quia unde omnis quod error commodi.</p>
+                <button class="btn">
+                    <h3>More</h3>
+                </button>
+            </article>
+        </section>
 
 <!-- ===============
 SERVICES SECTION
 =============== -->
 
-            <section class="section services">
-                <h1 class="section__heading">Services</h1>
-<!-- BEM IS OK HERE -->
-                <article class="article">
-                    <ul class="list">
-                        <li class="list__item">
-                            <i class="fas fa-camera list__icon"></i>
-                            <h2 class="list__heading">Portraits</h2>
-                            <p class="list__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, exercitationem amet? Neque facere vero aspernatur.</p>
-                        </li>
-                        <li class="list__item">
-                            <i class="fas fa-leaf" class="list__icon"></i>
-                            <h2 class="list__heading">Scenery</h2>
-                            <p class="list__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, culpa? Eligendi impedit ducimus delectus saepe.</p>
-                        </li>
-                        <li class="list__item">
-                            <i class="fas fa-heart" class="list__icon"></i>
-                            <h2 class="list__heading">Weddings</h2>
-                            <p class="list__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reprehenderit in, nisi dolore eos adipisci.</p>
-                        </li>
-                    </ul>
-                </article>
-            </section>
+        <section class="section services">
+            <h1 class="section__heading">Services</h1>
+            <article class="article wrapper">
+                <ul class="list">
+                    <li class="list__item">
+                        <i class="fas fa-camera list__icon"></i>
+                        <h2 class="list__heading">Portraits</h2>
+                        <p class="list__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, exercitationem amet? Neque facere vero aspernatur.</p>
+                    </li>
+                    <li class="list__item">
+                        <i class="fas fa-leaf list__icon"></i>
+                        <h2 class="list__heading">Scenery</h2>
+                        <p class="list__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, culpa? Eligendi impedit ducimus delectus saepe.</p>
+                    </li>
+                    <li class="list__item">
+                        <i class="fas fa-heart list__icon"></i>
+                        <h2 class="list__heading">Weddings</h2>
+                        <p class="list__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reprehenderit in, nisi dolore eos adipisci.</p>
+                    </li>
+                </ul>
+            </article>
+        </section>
 
 <!-- ===============
 TESTMONIALS SECTION
@@ -99,240 +102,236 @@ TESTMONIALS SECTION
 
 <!-- FIX THIS SECTION WITH BEM -->
 
-            <section class="testimonials"> 
-                <h1 class="section__heading">Testimonials</h1>
-                <article class="article">
-                    <div class="???">
-                        <img src="assets/image-2.jpeg" alt="Kate Simpson" class="article__image">
-                    </div>
-                    <div class="article__content">
-                        <h2 class="article__heading">Kate Simpson</h2>
-                        <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse excepturi atque modi error ducimus, quas saepe vitae eaque commodi neque dignissimos, beatae dolores molestiae ipsa quidem, necessitatibus laudantium culpa quisquam?</p>
-                    </div>
-                </article>
-            </section>
+        <section class="testimonials"> 
+            <h1 class="section__heading">Testimonials</h1>
+            <article class="article">
+                <div>
+                    <img src="assets/image-2.jpeg" alt="Kate Simpson" class="article__image">
+                </div>
+                <div class="article__content">
+                    <h2 class="article__heading">Kate Simpson</h2>
+                    <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse excepturi atque modi error ducimus, quas saepe vitae eaque commodi neque dignissimos, beatae dolores molestiae ipsa quidem, necessitatibus laudantium culpa quisquam?</p>
+                </div>
+            </article>
+        </section>
 
 <!-- =============== 
 ONE LINE PICTURE GRID
 =============== -->
 
-<!-- BETTER NAME THAN HOVER? -->
+<!-- is there a better name than hover??? -->
 
-            <section class="picture-divider">
-                <div class="content">
-                    <img src="assets/image-3.jpeg" alt="Fun in the rain" class="content__image">
-                    <div class="hover">
+        <section class="picture-divider">
+            <div class="content">
+                <img src="assets/image-3.jpeg" alt="Fun in the rain" class="content__image">
+                <div class="hover">
+                    <div class="hover-hidden">
                         <h2 class="hover__heading">Sample shoot</h2>
                         <p class="hover__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
-                <div class="content">
-                    <img src="assets/image-4.jpeg" alt="Fun in the rain" class="content__image">
-                    <div class="hover">
+            </div>
+            <div class="content">
+                <img src="assets/image-4.jpeg" alt="Fun in the rain" class="content__image">
+                <div class="hover">
+                    <div class="hover-hidden">
                         <h2 class="hover__heading">Sample shoot</h2>
                         <p class="hover__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
-                <div class="content">
-                    <img src="assets/image-5.jpeg" alt="Fun in the rain" class="content__image">
-                    <div class="hover">
-                        <h2 class="hover__heading">Sample shoot</h2>
-                        <p class="hover__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
+            </div>
+            <div class="content">
+                <img src="assets/image-5.jpeg" alt="Fun in the rain" class="content__image">
+                <div class="hover">
+                    <h2 class="hover__heading">Sample shoot</h2>
+                    <p class="hover__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <div class="content">
-                    <img src="assets/image-6.jpeg" alt="Fun in the rain" class="content__image">
-                    <div class="hover">
-                        <h2 class="hover__heading">Sample shoot</h2>
-                        <p class="hover__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
+            </div>
+            <div class="content">
+                <img src="assets/image-6.jpeg" alt="Fun in the rain" class="content__image">
+                <div class="hover">
+                    <h2 class="hover__heading">Sample shoot</h2>
+                    <p class="hover__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-            </section>
+            </div>
+        </section>
 
 <!-- ===============
 HAPPY CLIENTS SECTION
 =============== -->
 
-<!-- What do you call the div around the image? -->
+<!-- What do you call the div around the image? 
+Do we even need the div around the image???-->
 
-            <section class="clients">
-                <h1 class="section__heading">Happy Clients</h1>
-                <article class="article">
-                    <div class="???">
-                        <img src="assets/image-7.jpeg" alt="" class="article__image">
-                    </div>
-                    <div class="article__content">
-                        <p class="article__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore esse omnis nihil eius velit tenetur, expedita fugit perspiciatis sequi aperiam dicta nulla praesentium eveniet quas consectetur ratione tempora commodi sapiente maxime accusamus minima deserunt repellat.</p>
-                        <p class="article__byline">~ Mary Joe ~</p>
-                    </div>
-                </article>
-            </section>
-        </main>
+        <section class="clients">
+            <h1 class="section__heading">Happy Clients</h1>
+            <article class="article wrapper">
+                <div class="image-container">
+                    <i class="fas fa-angle-left article__icon--left"></i>
+                    <img src="assets/image-7.jpeg" alt="" class="article__image">
+                    <i class="fas fa-angle-right article__icon--right"></i>
+                </div>
+                <div class="article__content">
+                    <p class="article__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore esse omnis nihil eius velit tenetur, expedita fugit perspiciatis sequi aperiam dicta nulla praesentium eveniet quas consectetur ratione tempora commodi sapiente maxime accusamus minima deserunt repellat.</p>
+                    <p class="article__byline">~ Mary Joe ~</p>
+                </div>
+            </article>
+        </section>
+    </main>
 
 <!-- ===============
 LATEST NEWS SECTION
 =============== -->
 
-<!-- <article class="article">
-    <ul class="list">
-        <li class="list__item">
-            <i class="fas fa-camera list__icon"></i>
-            <h2 class="list__heading">Portraits</h2>
-            <p class="list__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, exercitationem amet? Neque facere vero aspernatur.</p>
-        </li> -->
-
-        <aside>
-            <section class="latest">
-                <h1 class="section__heading">Latest news</h1>
-                <article class="article">
-                    <ul class="image-list">
-                        <li class="image-list__item">
-                            <a href="#" class="image-list__link">
-                                <img src="assets/image-8.jpeg" alt="Italy coast" class="image-list__image">
-                                <h3 class="image-list__heading">My trip to Italy<br>
-                                    <span class="image-list__heading--colour">Read more 
-                                        <i class="fas fa-angle-double-right image-list__icon"></i>
-                                    </span>
-                                </h3>
-                            </a>
-                        </li>
-                        <li class="image-list__item">
-                            <a href="#" class="image-list__link">
-                                <img src="assets/image-9.jpeg" alt="Patio furniture in Greece" class="image-list__image">
-                                <h3 class="image-list__heading">Greece photoshoot<br>
-                                    <span class="image-list__heading--colour">Read more <i class="fas fa-angle-double-right"></i></span>
-                                </h3>
-                            </a>
-                        </li>
-                        <li class="image-list__item">
-                            <a href="#" class="image-list__link">
-                                <img src="assets/image-10.jpeg" alt="Girl with curly light brown hair" class="image-list__image">
-                                <h3 class="image-list__heading">Travelling with your partner<br>
-                                    <span class="image-list__heading--colour">Read more <i class="fas fa-angle-double-right"></i></span>
-                                </h3>
-                            </a>
-                        </li>
-                    </ul>
-                </article>
-            </section>
+    <aside>
+        <section class="latest">
+            <h1 class="section__heading">Latest news</h1>
+            <article class="article wrapper">
+                <ul class="image-list">
+                    <li class="image-list__item">
+                        <a href="#" class="image-list__link">
+                            <img src="assets/image-8.jpeg" alt="Italy coast" class="image-list__image">
+                            <h3 class="image-list__heading">My trip to Italy<br>
+                                <span class="image-list__heading--colour">Read more 
+                                    <i class="fas fa-angle-double-right image-list__icon"></i>
+                                </span>
+                            </h3>
+                        </a>
+                    </li>
+                    <li class="image-list__item">
+                        <a href="#" class="image-list__link">
+                            <img src="assets/image-9.jpeg" alt="Patio furniture in Greece" class="image-list__image">
+                            <h3 class="image-list__heading">Greece photoshoot<br>
+                                <span class="image-list__heading--colour">Read more <i class="fas fa-angle-double-right image-list__icon"></i></span>
+                            </h3>
+                        </a>
+                    </li>
+                    <li class="image-list__item">
+                        <a href="#" class="image-list__link">
+                            <img src="assets/image-10.jpeg" alt="Girl with curly light brown hair" class="image-list__image">
+                            <h3 class="image-list__heading">Travelling with your partner<br>
+                                <span class="image-list__heading--colour">Read more <i class="fas fa-angle-double-right image-list__icon"></i></span>
+                            </h3>
+                        </a>
+                    </li>
+                </ul>
+            </article>
+        </section>
 
 <!-- ===============
 FORM / ASK A QUESTION SECTION 
 =============== -->
 
-            <section>
-                <h1 class="section__heading">Ask a question</h1>
-                <form method="POST" autocomplete="off" name="question-form" id="question-form" class="form">
-                    <input type="text" placeholder="your message" class="form__input">
-                    <input type="submit" value="send" class="form__submit">
-                </form>
-            </section>
+        <section class="question">
+            <h1 class="section__heading">Ask a question</h1>
+            <form method="POST" autocomplete="off" name="question-form" id="question-form" class="form wrapper">
+                <input type="text" placeholder="your message" class="form__input">
+                <input type="submit" value="send" class="form__submit">
+            </form>
+        </section>
 
 <!-- ===============
 ALL PICTURES SECTION
 =============== -->
 
-<nav>
-    <ul class="nav">
-        <li class="nav__item">
-            <a href="#" class="nav__link">
-                <h3 class="nav__heading">Home</h3>
-            </a>
-        </li>
-
-            <section class="latest-pics">
-                <nav>
-                    <ul class="pics-nav">
-                        <li class="pics-nav__item">
-                            <a href="#" class="pics-nav__link">
-                                <h2 class="pics-nav__heading">Latest shoots</h2>
-                            </a>
-                        </li>
-                        <li class="pics-nav__item">
-                            <a href="#" class="pics-nav__link">
-                                <h2 class="pics-nav__heading">All</h2>
-                            </a>
-                        </li>
-                        <li class="pics-nav__item">
-                            <a href="#" class="pics-nav__link">
-                                <h2 class="pics-nav__heading">Weddings</h2>
-                            </a>
-                        </li>
-                        <li class="pics-nav__item">
-                            <a href="#" class="pics-nav__link">
-                                <h2 class="pics-nav__heading">Scenery</h2>
-                            </a>
-                        </li>
-                        <li class="pics-nav__item">
-                            <a href="#" class="pics-nav__link">
-                                <h2 class="pics-nav__heading">Portraits</h2>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <ul class="pics">
-                    <li class="pics__item">
-                        <a href="#" class="pics__link">
-                            <img src="assets/image-11.jpeg" alt="Aerial view of a waterfall" class="pics__image">
-                            <div class="hover">
-                                <h2 class="hover__heading">Landing Page</h2>
-                            </div>
+        <section class="latest-pics wrapper">
+            <nav>
+                <ul class="pics-nav">
+                    <li class="pics-nav__item">
+                        <a href="#" class="pics-nav__link">
+                            <h2 class="pics-nav__heading">Latest shoots</h2>
                         </a>
                     </li>
-                    <li class="pics__item">
-                        <a href="#" class="pics__link">
-                            <img src="assets/image-12.jpeg" alt="Mountain side buildings near the water" class="pics__image">
-                            <div class="hover">
-                                <h2 class="hover__heading">Landing Page</h2>
-                            </div>
+                    <li class="pics-nav__item">
+                        <a href="#" class="pics-nav__link">
+                            <h2 class="pics-nav__heading">All</h2>
                         </a>
                     </li>
-                    <li class="pics__item">
-                        <a href="#" class="pics__link">
-                            <img src="assets/image-13.jpeg" alt="Beach with people and boats" class="pics__image">
-                            <div class="hover">
-                                <h2 class="hover__heading">Landing Page</h2>
-                            </div>
+                    <li class="pics-nav__item">
+                        <a href="#" class="pics-nav__link">
+                            <h2 class="pics-nav__heading">Weddings</h2>
                         </a>
                     </li>
-                    <li class="pics__item">
-                        <a href="#" class="pics__link">
-                            <img src="assets/image-14.jpeg" alt="Cliff by the water" class="pics__image">
-                            <div class="hover">
-                                <h2 class="hover__heading">Landing Page</h2>
-                            </div>
+                    <li class="pics-nav__item">
+                        <a href="#" class="pics-nav__link">
+                            <h2 class="pics-nav__heading">Scenery</h2>
+                        </a>
+                    </li>
+                    <li class="pics-nav__item">
+                        <a href="#" class="pics-nav__link">
+                            <h2 class="pics-nav__heading">Portraits</h2>
                         </a>
                     </li>
                 </ul>
-            </section>
-        </aside>
+            </nav>
+
+            <ul class="pics">
+                <li class="pics__item">
+                    <a href="#" class="pics__link">
+                        <img src="assets/image-11.jpeg" alt="Aerial view of a waterfall" class="pics__image">
+                        <div class="hover">
+                            <h2 class="hover__heading">Landing Page</h2>
+                        </div>
+                    </a>
+                </li>
+                <li class="pics__item">
+                    <a href="#" class="pics__link">
+                        <img src="assets/image-12.jpeg" alt="Mountain side buildings near the water" class="pics__image">
+                        <div class="hover">
+                            <h2 class="hover__heading">Landing Page</h2>
+                        </div>
+                    </a>
+                </li>
+                <li class="pics__item">
+                    <a href="#" class="pics__link">
+                        <img src="assets/image-13.jpeg" alt="Beach with people and boats" class="pics__image">
+                        <div class="hover">
+                            <h2 class="hover__heading">Landing Page</h2>
+                        </div>
+                    </a>
+                </li>
+                <li class="pics__item">
+                    <a href="#" class="pics__link">
+                        <img src="assets/image-14.jpeg" alt="Cliff by the water" class="pics__image">
+                        <div class="hover">
+                            <h2 class="hover__heading">Landing Page</h2>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </aside>
 
 <!-- ================        
 MAIN FOOTER
 ================ -->
 
-    <footer>
+    <footer class="main-footer wrapper">
 
 <!-- ===============
 CONTACT FOOTER SECTION
 =============== -->
 
-        <section>
-            <h2>Contact</h2>
-            <article>
-                <ul>
-                    <li>
-                        <i class="fas fa-envelope"></i>
-                        <p>info@delicate.com</p>
+<!-- you are missing a form here -->
+
+        <section class="footer-section contacts">
+            <h2 class="footer-section__heading">Contact</h2>
+            <article class="footer-article">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <p class="footer__text"><i class="fas fa-envelope footer__icon"></i> &nbsp info@delicate.com</p>
+                    </li>
+                    <li class="footer__item">
+                        <p class="footer__text"><i class="fas fa-phone footer__icon"></i> &nbsp +123-456-7890</p>
+                    </li>
+                    <li class="footer__item">
+                        <p class="footer__text"><i class="fas fa-map-marker-alt footer__icon"></i> &nbspToronto, Ontario</p>
                     </li>
                     <li>
-                        <i class="fas fa-phone"></i>
-                        <p>+123-456-7890</p>
-                    </li>
-                    <li>
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>Toronto, Ontario</p>
+                        <form method="POST" autocomplete="off" name="question-form" id="question-form" class="footer-form">
+                            <input type="text" placeholder="your email" class="footer-form__input">
+                            <button class="footer-form__button"><i class="fab fa-telegram-plane"></i></button>
+                        </form>
                     </li>
                 </ul>
             </article>
@@ -342,33 +341,37 @@ CONTACT FOOTER SECTION
 ABOUT US FOOTER SECTION
 =============== -->
         
-        <section>
-            <h2>Abous us</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, ratione! Asperiores nulla aspernatur cupiditate iure odit quaerat quasi a ut?</p>
+        <section class="footer-section about-us">
+            <h2 class="footer-section__heading">About us</h2>
+            <p class="footer__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, ratione! Asperiores nulla aspernatur cupiditate iure odit quaerat quasi a ut?</p>
         </section>
 
 <!-- ===============
 INSTAGRAM FOOTER SECTION
 =============== -->
 
-        <section>
-            <h2>Instagram</h2>
-            <div>
-                <img src="assets/image-15.jpeg" alt="Aerial view of boat on water">
-                <img src="assets/image-16.jpeg" alt="Outside an orange house">
-                <img src="assets/image-17.jpeg" alt="Cliffside houses overlooking water and boat">
-                <img src="assets/image-18.jpeg" alt="Green bicycle with tires that look like watermelon">
-                <img src="assets/image-19.jpeg" alt="Aerial view of cliff">
-                <img src="assets/image-20.jpeg" alt="Street with colourful houses">
-                <img src="assets/image-21.jpeg" alt="Red car with building in the background">
-                <img src="assets/image-22.jpeg" alt="Colourful houeses beside a river">
+        <section class="footer-section instagram">
+            <h2 class="footer-section__heading">Instagram</h2>
+            <div class="footer-pics">
+                <img src="assets/image-15.jpeg" alt="Aerial view of boat on water" class="footer-pics__image">
+                <img src="assets/image-16.jpeg" alt="Outside an orange house" class="footer-pics__image">
+                <img src="assets/image-17.jpeg" alt="Cliffside houses overlooking water and boat" class="footer-pics__image">
+                <img src="assets/image-18.jpeg" alt="Green bicycle with tires that look like watermelon" class="footer-pics__image">
+                <img src="assets/image-19.jpeg" alt="Aerial view of cliff" class="footer-pics__image">
+                <img src="assets/image-20.jpeg" alt="Street with colourful houses" class="footer-pics__image">
+                <img src="assets/image-21.jpeg" alt="Red car with building in the background" class="footer-pics__image">
+                <img src="assets/image-22.jpeg" alt="Colourful houeses beside a river" class="footer-pics__image">
             </div>
         </section>
-
-        <section>
-            <h2 class="????">Photography</h2>
+    </footer>
+<!-- ===============
+NAV FOOTER
+=============== -->
+    <footer>
+        <section class="footer-section nav">
+            <h2 class="footer-section__heading">Photography</h2>
             <nav>
-                <ul class="nav">
+                <ul class="footer-nav">
                     <li class="nav__item">
                         <a href="#" class="nav__link">
                             <h3 class="nav__heading">Home</h3>
@@ -395,15 +398,28 @@ INSTAGRAM FOOTER SECTION
                         </a>
                     </li>
                 </ul>
+            </section>
+        </footer>
+
+<!-- ===============
+SOCIAL FOOTER 
+=============== -->
+
+    <footer>
+        <section class="footer-social">
+            <a href="#"><i class="fab fa-facebook footer-social__icon"></i></a>
+            <a href="#"><i class="fab fa-instagram footer-social__icon"></i></a>
+            <a href="#"><i class="fab fa-pinterest-p footer-social__icon"></i></a>
         </section>
     </footer>
+    
 
 <!-- ================        
 SECOND FOOTER
 ================ -->
 
-    <footer>
-        <p>All rights reserved ©</p>
+    <footer class="second-footer">
+        <h3 class="second-footer__text">2017 all rights reserved ©</h3>
     </footer>
     
 
