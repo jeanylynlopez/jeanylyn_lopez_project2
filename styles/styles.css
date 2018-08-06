@@ -132,6 +132,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+html {
+  font-size: 62.5%; }
+
 h1, h2, h3, .form__input, .form__submit {
   font-family: Catamaran;
   color: #2a2a2a;
@@ -140,19 +143,26 @@ h1, h2, h3, .form__input, .form__submit {
   text-transform: uppercase; }
 
 h1 {
-  font-size: 46px;
+  font-size: 4.6rem;
   text-align: center; }
 
 h2 {
-  font-size: 32px; }
+  font-size: 3.2rem; }
 
 h3, .form__input, .form__submit {
-  font-size: 20px; }
+  font-size: 2.0rem; }
 
 p {
   font-family: Lato;
   color: #2a2a2a;
-  font-size: 24px;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 38px; }
+
+footer p {
+  font-family: Lato;
+  color: #2a2a2a;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 38px; }
 
@@ -240,17 +250,19 @@ ul {
 .services {
   padding: 100px;
   background-color: #bec884; }
+  .services .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center; }
+    .services .list .list__item {
+      margin: 0 5px;
+      padding: 20px; }
+      .services .list .list__item .list__icon {
+        font-size: 6rem; }
 
-.list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center; }
-  .list .list__item {
-    margin: 0 5px;
-    padding: 20px; }
-    .list .list__item .list__icon {
-      font-size: 60px; }
+.services .list__text {
+  font-size: 1.6rem; }
 
 .testimonials {
   padding: 120px; }
@@ -389,16 +401,28 @@ ul {
   letter-spacing: 5px; }
 
 .latest-pics {
+  background-color: #efefef;
+  padding: 100px 0; }
+  .latest-pics nav {
+    padding-right: 20px;
+    padding-top: 10px;
+    width: 25%;
+    height: 100%; }
+
+.pics-nav__heading {
+  line-height: 60px; }
+
+.latest-pics__container {
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  text-align: center; }
-  .latest-pics nav {
-    width: 20%;
-    height: 606px; }
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.pics {
+  width: 60%; }
 
 .pics-nav {
   background-color: #606060;
@@ -415,6 +439,37 @@ ul {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
+
+.pics .pics__item {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding: 10px; }
+
+.pics__item h2 {
+  display: none; }
+
+.pics__image {
+  width: 300px;
+  display: block;
+  max-height: 280px; }
+
+.pics__item:hover .hover h2 {
+  color: #e6e2e2;
+  font-size: 32px;
+  padding: 10% 0;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.3)));
+  background: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+  background: -o-linear-gradient(right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)); }
 
 .main-footer {
   display: -webkit-box;
@@ -433,7 +488,7 @@ ul {
   line-height: 25px; }
 
 .footer-form__input {
-  width: 85%;
+  width: 70%;
   height: 30px;
   font-family: Lato;
   font-size: 16px;

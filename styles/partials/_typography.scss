@@ -1,7 +1,11 @@
 
 // ===============
-// HEADINGS
+// HEADINGS 
 // ===============
+
+html {
+    font-size: 62.5%;
+}
 
 h1, h2, h3, .form__input, .form__submit {
     font-family: Catamaran;
@@ -12,16 +16,16 @@ h1, h2, h3, .form__input, .form__submit {
 }
 
 h1 {
-    font-size: 46px;
+    font-size: 4.6rem;
     text-align: center;
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 3.2rem;
 }
 
 h3, .form__input, .form__submit {
-    font-size: 20px;
+    font-size: 2.0rem;
 }
 
 // ===============
@@ -31,7 +35,15 @@ h3, .form__input, .form__submit {
 p {
     font-family: Lato;
     color:  #2a2a2a;
-    font-size: 24px;
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 38px;
+}
+
+footer p {
+    font-family: Lato;
+    color:  #2a2a2a;
+    font-size: 1.6rem;
     font-weight: 400;
     line-height: 38px;
 }

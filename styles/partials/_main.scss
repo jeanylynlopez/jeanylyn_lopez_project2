@@ -35,23 +35,36 @@
 // ???how come the content isn't centered???
 
 .services {
-    padding: 100px;
-    background-color: rgb(190, 200, 132);
+    // padding: 100px;
+    // background-color: rgb(190, 200, 132);
 }
 
 // ???how come the icon font in typography isn't working???
 // ???how come .list isn't centered???
 
-.list {
-    display: flex;
-    text-align: center;
-    .list__item {
-        margin: 0 5px;
-        padding: 20px;
-        .list__icon {
-            font-size: 60px;
+.services {
+    padding: 100px;
+    background-color: rgb(190, 200, 132);
+    .list {
+        display: flex;
+        text-align: center;
+        .list__item {
+            margin: 0 5px;
+            padding: 20px;
+            .list__icon {
+                font-size: 6rem;
+            }
         }
     }
+}
+
+.services {
+    .list__text {
+        font-size: 1.6rem;
+    }
+}
+
+.services p {
 }
 
 // ===============
