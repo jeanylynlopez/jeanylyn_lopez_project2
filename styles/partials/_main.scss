@@ -74,25 +74,56 @@
 // ONE LINE PICTURE GRID
 // ===============
 
-// ???there's one pic that's larger in height than the rest???
+// ???there's one pic that's larger in height than the rest when you look at it in chrome???
 
 .picture-divider {
     display: flex;
     .content {
         width: 25%;
+        margin: 0;
+        padding: 0;
+        position: relative;
     }
     .content__image {
         width: 100%;
-        // max-height: 290px;
-        display: inline-block;
+        display: block;
+        max-height: 250px;
     }
 }
 
-// ???need to work on the hover???
+.content h2, .content p {
+    display: none;
+}
 
-.hover {
-    // display: none;
-    position: relative;
+.content:hover .hover h2 {
+    color: rgb(230, 226, 226);
+    font-size: 32px;
+    padding: 15% 0;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.3));
+}
+
+.content:hover .hover p {
+    color: rgb(230, 226, 226);
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 auto;
+    width: 60%;
+    position: absolute;
+    display: block;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 // ===============
