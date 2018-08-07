@@ -83,6 +83,9 @@ ul {
 // ===============
 
 .header__content {
+    @include break-point(mediumish){
+        display: none;
+    }
     h3 {
         line-height: 30px;
         @include break-point(large) {

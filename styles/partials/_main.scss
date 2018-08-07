@@ -130,11 +130,14 @@
 
 .picture-divider {
     display: flex;
+    flex-wrap: wrap;
     .content {
         width: 25%;
         margin: 0;
         padding: 0;
         position: relative;
+        display: flex;
+        // flex-wrap: wrap;
     }
     .content__image {
         width: 100%;
@@ -222,11 +225,23 @@
 }
 
 .article__icon--left {
-    left: 400px;
+    left: 35%;
+    @include break-point(large){
+        left: 25%;
+    }
+    @include break-point(mediumish){
+        left: 20%;
+    }
 }
 
 .article__icon--right {
-    right: 400px;
+    right: 35%;
+    @include break-point(large){
+        right: 25%;
+    }
+    @include break-point(mediumish){
+        right: 20%;
+    }
 }
 
 .clients {

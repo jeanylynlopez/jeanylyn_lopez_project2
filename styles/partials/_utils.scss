@@ -5,11 +5,21 @@ $highlight-color: rgb(40, 93, 100);
   @if $point == large {
       @media (max-width: 955px) { @content; }
   } 
+
+  @else if $point == largeish {
+    @media (max-width: 915px) { @content; }
+  }
   
   @else if $point == medium {
       @media (max-width: 840px) { @content; }
   } 
+
+  @else if $point == mediumish {
+    @media (max-width: 680px) { @content; }
+  }
   
+//change this one
+
   @else if $point == small {
     @media (max-width: 600px) { @content; }
   }  

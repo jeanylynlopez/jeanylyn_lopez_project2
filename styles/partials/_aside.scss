@@ -4,13 +4,47 @@
 
 .latest {
     margin: 100px 0; 
+    @include break-point(large){
+        margin: 50px 0;
+    }
     .image-list {
         display: flex;
         justify-content: space-between;
+        // display: block;
+        @include break-point(medium){
+            flex-direction: column;
+        }
+        .image-list__image {
+            width: 100%;
+            @include break-point(medium){
+                width: 40%;
+                display: block;
+                margin: 0 auto;
+            }    
+        }
     }
 }
 
+@include break-point(medium){
+    .latest {
+        .image-list__link {
+            .image-list__heading {
+                text-align: center;
+            }
+        }
+    }
+}
+
+
 .image-list__item {
+    @include break-point(medium){
+        // display: block;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+
+        // margin: 0 auto;
+    }
     .image-list__link {
         text-decoration: none;
         .image-list__heading--colour, .image-list__icon {
@@ -18,6 +52,16 @@
         }
     }
 }
+
+.include break-point(medium){
+    .image-list__heading {
+        margin: 0 auto;
+        // display: flex;
+        // justify-content: center;
+        display: block;
+    }
+}
+
 
 // ===============
 // FORM / ASK A QUESTION SECTION 
@@ -75,19 +119,34 @@
     // margin: 0 auto;
     nav {
         padding-right: 20px;
-        padding-top: 10px;
+        margin-top: 20px;
         width: 25%;
-        display: flex;
-        flex-direction: column;
         height: 100%;
+        // padding-top: 10px;
+        // display: flex;
+        // flex-direction: column;
         // height: 100%;
         // width: 20%;
         // height: 606px;
-    }
-}
+        @include break-point(largeish){
+            width: 100%;
+            padding: 0;
+            // height: 20px;
+        }
+        .pics-nav {
+            display: flex;
+            flex-direction: column;
+            @include break-point(largeish){
+                flex-direction: row;
+                justify-content: space-around;
+                height: 90px;
+                width: 100%;
+                padding: 15px 0;
+                margin: -100px auto;
 
-.pics-nav__heading {
-    // line-height: 60px;
+            }
+        }
+    }
 }
 
 .latest-pics__container {
@@ -95,22 +154,35 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    @include break-point(largeish){
+        flex-direction: column;
+    }
 }
 
-.pics {
-    // width: 80%;
-    // display: flex;
-    // justify-content: center;
-}
+// .latest-pics {
+//     nav {
+//         .pics-nav {
+//             display: flex;
+//             flex-direction: column;
+//         }
+//     }
+// }
+
 
 .pics-nav {
     background-color: rgb(96, 96, 96);
     padding: 20px;
     text-align: center;
+    height: 495px;
+    display: block;
     .pics-nav__link {
         text-decoration: none;
         .pics-nav__heading {
             color: rgb(255, 255, 255);
+            line-height: 30px;
+            @include break-point(largeish){
+                font-size: 2rem;
+            }
         }
     }
 }
@@ -122,14 +194,33 @@
 .pics {
     display: flex;
     flex-wrap: wrap;
+    // margin: 0 auto;
+    @include break-point(largeish){
+        margin: 0 auto;
+    }
+    @include break-point(medium){
+        margin: 0 auto;
+        justify-content: center;
+    }
 }
+
+// @include break-point(mediumish){
+//     .pics {
+//         .latest-pics__container {
+//             margin: 0 auto;
+//         }
+//     }
+    
+// }
 
 .pics .pics__item {
     position: relative;
-    margin: 0;
-    padding: 0;
-    padding: 10px;
+    margin: 20px 15px;
+    // margin: 0;
+    // padding: 10px;
+    // padding: 10px;
 }
+
 
 .pics__item h2 {
     display: none;
@@ -144,8 +235,8 @@
 .pics__item:hover .hover h2{
     color: rgb(230, 226, 226);
     font-size: 32px;
-    padding: 10% 0;
-    margin: 0 auto;
+    padding: 30% 0;
+    margin: 0;
     text-align: center;
     display: block;
     position: absolute;
@@ -159,9 +250,4 @@
 // ===============
 // MEDIA QUERY 870PX
 // ===============
-
-@media (max-width: 870px) {
-
-  
-} //END OF 845px MEDIA QUERY
 
