@@ -3,10 +3,12 @@
 // =============== 
 
 .section__heading {
+    line-height: 40px;
     span {
         color: $highlight-color;
     }
 }
+
 
 .about {
     padding: 100px;
@@ -33,38 +35,44 @@
 
 // ???figure out wrappers???
 // ???how come the content isn't centered???
-
-.services {
-    // padding: 100px;
-    // background-color: rgb(190, 200, 132);
-}
-
-// ???how come the icon font in typography isn't working???
 // ???how come .list isn't centered???
 
 .services {
-    padding: 100px;
+    padding: 100px 0;
     background-color: rgb(190, 200, 132);
+    @include break-point(large) {
+        padding: 50px 0;
+    }
     .list {
         display: flex;
         text-align: center;
-        .list__item {
-            margin: 0 5px;
-            padding: 20px;
-            .list__icon {
-                font-size: 6rem;
-            }
+        @include break-point(medium){
+            text-align: center;
+            flex-direction: column;
+            justify-content: center;
         }
     }
 }
 
 .services {
-    .list__text {
-        font-size: 1.6rem;
+    .list__item {
+        margin: 0 5px;
+        padding: 20px;
+        @include break-point(medium){
+            margin: 0 auto;
+            padding: 0px;
+            width:50%;
+        }
+        .list__icon {
+            font-size: 6rem;
+            @include break-point(medium){
+                font-size: 4rem;
+            }
+        }
+        .list__text {
+            font-size: 1.6rem;
+        }
     }
-}
-
-.services p {
 }
 
 // ===============
@@ -73,12 +81,43 @@
 
 .testimonials {
     padding: 120px;
+    @include break-point(medium){
+        padding: 50px;
+    }
     .article {
         display: flex;
         justify-content: center;
-        .article__content {
-            margin: 80px 0 0 50px;
-            width: 50%;
+        @include break-point(medium){
+            flex-direction: column;
+        }
+        @include break-point(large) {
+            .article__image {
+               width: 80%;
+            }
+        @include break-point(medium){
+            .article__image {
+                width: 50%;
+                margin: 0 auto;
+                display: block;
+            }
+        }    
+        }
+    }
+}
+
+.testimonials {
+    .article__content {
+        margin: 80px 0 0 50px;
+        width: 60%;
+        @include break-point(large){
+            margin: 0 auto; 
+            .article__text {
+                font-size: 2rem;
+            }
+        }
+        @include break-point(medium){
+            margin: 0 auto;
+            text-align: center;
         }
     }
 }
@@ -110,7 +149,7 @@
 
 .content:hover .hover h2 {
     color: rgb(230, 226, 226);
-    font-size: 32px;
+    font-size: 3.2rem;
     padding: 15% 0;
     margin: 0 auto;
     text-align: center;
@@ -121,6 +160,10 @@
     right: 0;
     bottom: 0;
     background: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.3));
+    @include break-point(medium){
+        font-size: 2rem;
+        padding: 25% 0;
+    }
 }
 
 .content:hover .hover p {
@@ -137,6 +180,14 @@
     left: 0;
     right: 0;
     bottom: 0;
+    @include break-point(medium){
+        display: none;
+    }
+}
+
+@include break-point(medium){
+    
+
 }
 
 // ===============
@@ -189,26 +240,51 @@
     }
 }
 
+// ===============
+// MEDIA QUERY 955PX
+// ===============
 
-// .footer__item {
-//     position: relative;
-//     margin-left: 20px;
-//     .footer__text {
-//         margin-left: 10px;
-//         line-height: 25px;
+// @media (max-width: 955px) {
+
+//     .testimonials {
+//         .article {
+//             .article__image {
+//                 width: 80%;
+//             }
+//         }
 //     }
-// }
+//     .testimonials {
+//         .article {
+//             .article__content {
+//                 margin: 0;
+//                 .article__text {
+//                     font-size: 2rem;
+//                 }
+//             }
+//         }
+//     }
 
-// .footer-article li::before {
-//     font-family: 'Font Awesome\ 5 Free';
-//     color: rgb(42, 42, 42);
-//     font-size: 18px;
-//     font-weight: 900;
-//     position: absolute;
-//     left: -20px;
-//     top: 5px;
-// }
+//     .services {
+//         padding: 50px;
+//         .list {
+//             .list__item {
+//                 margin: 0;
+//                 .list__icon {
+//                     font-size: 3.5rem;
+//                 }
+//             }
+//         }
+//     }
 
-// .footer-article li:nth-child(1)::before {
-//     content: "\f0e0";
-// }
+//     .services {
+//         .list {
+//             flex-direction: column;
+//             justify-content: center;
+//             .list__text {
+//                 width: 70%;
+//                 margin: 0 auto;
+//             }
+//         }
+//     }
+    
+// }  END OF 955px MEDIA QUERY

@@ -28,6 +28,13 @@ header section {
     display: flex;
     justify-content: space-around;
     position: relative;
+    @include break-point(medium){
+        flex-direction: column;
+        padding: 15px;
+        .header__heading {
+            margin: 0 auto;
+        }
+    }
 }
 
 ul {
@@ -37,6 +44,10 @@ ul {
 
 .header-nav {
     display: flex;
+    @include break-point(medium){
+        justify-content: center;
+        margin-top: -15px;
+    }
     .nav__item {
         padding-left: 25px;
         .nav__link {
@@ -53,6 +64,9 @@ ul {
 // ===============
 
 .header__content {
+    @include break-point(medium) {
+        // display: none;
+    }
     position: absolute;
     top: 35%;
     left: 60%;
@@ -63,16 +77,30 @@ ul {
     }
 }
 
+
 // ===============
-// BUTTON
+// BUTTON 
 // ===============
 
 .header__content {
     h3 {
         line-height: 30px;
+        @include break-point(large) {
+            font-size: 1.8rem; 
+            .header__content--bigtext {
+                font-size: 6rem;
+            } 
+        }
     }
+
     button {
         margin-top: -15px;
+        @include break-point(large) {
+            width: 110px;
+            h3 {
+                font-size: 1.6rem;
+            }
+        }
     }
 }
 
@@ -89,4 +117,8 @@ ul {
      letter-spacing: 5px;
      } 
 }
+
+
+
+
 
