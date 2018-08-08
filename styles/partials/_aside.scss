@@ -43,7 +43,16 @@
     }
 }
 
-.include break-point(medium){
+.image-list__item {
+    .image-list__link {
+        .image-list__icon:hover {
+            margin-left: 15px;
+            transition: all 1.5s linear;
+        }
+    }
+}
+
+@include break-point(medium){
     .image-list__heading {
         margin: 0 auto;
         display: block;

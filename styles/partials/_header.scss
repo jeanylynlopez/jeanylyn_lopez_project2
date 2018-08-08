@@ -62,6 +62,13 @@ ul {
     }
 }
 
+.header-nav {
+    .nav__heading:hover {
+        color: rgb(190, 200, 132);
+        transition: all .3s linear;
+    }
+}
+
 @include break-point(mediumish){
         .header-nav li:nth-child(1){
             display: none;
@@ -76,15 +83,12 @@ ul {
 // ===============
 
 .header__content {
-    @include break-point(medium) {
-        // display: none;
-    }
     position: absolute;
     top: 35%;
     left: 60%;
     h3 {
         .header__content--bigtext {
-            font-size: 80px;
+            font-size: 80px;  
         }
     }
 }
@@ -104,6 +108,9 @@ ul {
             .header__content--bigtext {
                 font-size: 6rem;
             } 
+        }
+        @include break-point(mediumish){
+            color: white;
         }
     }
 

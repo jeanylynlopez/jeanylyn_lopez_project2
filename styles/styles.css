@@ -241,6 +241,12 @@ ul {
       .header-nav .nav__item .nav__link .nav__heading {
         font-weight: 600; }
 
+.header-nav .nav__heading:hover {
+  color: #bec884;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear; }
+
 @media (max-width: 680px) {
   .header-nav li:nth-child(1) {
     display: none; }
@@ -265,6 +271,9 @@ ul {
       font-size: 1.8rem; }
       .header__content h3 .header__content--bigtext {
         font-size: 6rem; } }
+  @media (max-width: 680px) {
+    .header__content h3 {
+      color: white; } }
 
 .header__content button {
   margin-top: -15px; }
@@ -543,9 +552,16 @@ ul {
   .image-list__item .image-list__link .image-list__heading--colour, .image-list__item .image-list__link .image-list__icon {
     color: #285d64; }
 
-.include break-point(medium) .image-list__heading {
-  margin: 0 auto;
-  display: block; }
+.image-list__item .image-list__link .image-list__icon:hover {
+  margin-left: 15px;
+  -webkit-transition: all 1.5s linear;
+  -o-transition: all 1.5s linear;
+  transition: all 1.5s linear; }
+
+@media (max-width: 840px) {
+  .image-list__heading {
+    margin: 0 auto;
+    display: block; } }
 
 .question {
   background-color: #f2b094;
