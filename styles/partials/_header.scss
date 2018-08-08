@@ -18,6 +18,12 @@ header {
     background-position: center;
     background-color: whitesmoke;
     padding: 1px;
+    position: relative;
+    @include break-point(small){
+        background-image: linear-gradient(
+        rgba(255, 255, 255, 0.5)
+        ), url(../assets/image-1.jpeg);
+    }
 }
 
 // ===============
@@ -28,6 +34,7 @@ header section {
     display: flex;
     justify-content: space-around;
     position: relative;
+    // z-index: 1;
     @include break-point(medium){
         flex-direction: column;
         padding: 15px;
@@ -86,6 +93,12 @@ ul {
     position: absolute;
     top: 35%;
     left: 60%;
+    margin: 0 auto;
+    @include break-point(small){
+        left: 20%;
+        margin: 0 auto;
+        padding: 20px;
+    }
     h3 {
         .header__content--bigtext {
             font-size: 80px;  
@@ -99,7 +112,7 @@ ul {
 
 .header__content {
     @include break-point(mediumish){
-        display: none;
+        // display: none;
     }
     h3 {
         line-height: 30px;
@@ -108,9 +121,6 @@ ul {
             .header__content--bigtext {
                 font-size: 6rem;
             } 
-        }
-        @include break-point(mediumish){
-            color: white;
         }
     }
 
@@ -122,6 +132,12 @@ ul {
                 font-size: 1.6rem;
             }
         }
+    }
+}
+
+button {
+    @include break-point(mediumish){
+        margin: 0 auto;
     }
 }
 
