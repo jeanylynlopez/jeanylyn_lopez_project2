@@ -604,10 +604,11 @@ ul {
           flex-direction: row;
           -ms-flex-pack: distribute;
           justify-content: space-around;
-          height: 90px;
+          height: 60px;
           width: 100%;
           padding: 15px 0;
-          margin: -100px auto; } }
+          margin: -100px auto;
+          padding: 0; } }
 
 @media (max-width: 480px) {
   .latest-pics nav .pics-nav li:nth-child(2) {
@@ -814,3 +815,30 @@ ul {
   .footer-social .footer-social__icon {
     font-size: 20px;
     color: #848484; }
+
+.fa-facebook:hover {
+  color: #3b5998;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2); }
+
+.fa-instagram:hover {
+  color: #cd486b;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2); }
+
+.fa-pinterest-p:hover {
+  color: #cb2027;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2); }

@@ -142,3 +142,21 @@
         color: rgb(132, 132, 132);
     }
 }
+
+.fa-facebook:hover{
+    color: rgb(59, 89, 152);
+    transition: all .3s ease-in-out;
+    transform: scale(1.2);
+}
+
+.fa-instagram:hover {
+    color: rgb(205, 72, 107);
+    transition: all .3s ease-in-out;
+    transform: scale(1.2);
+}
+
+.fa-pinterest-p:hover {
+    color: rgb(203, 32, 39);
+    transition: all .3s ease-in-out;
+    transform: scale(1.2);
+}
