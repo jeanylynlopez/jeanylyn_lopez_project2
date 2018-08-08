@@ -48,6 +48,11 @@ ul {
         justify-content: center;
         margin-top: -15px;
     }
+    @include break-point(small){
+        .header-nav:nth-child(1){
+            display: none;
+        }
+    }
     .nav__item {
         padding-left: 25px;
         .nav__link {
@@ -58,6 +63,15 @@ ul {
         }  
     }
 }
+
+// @include break-point(small){
+//     .header-nav li:nth-child(1){
+//         display: none;
+//     }
+//     .header-nav li:nth-child(5){
+//         display: none;
+//     }
+// }
 
 // ===============
 // TEXT

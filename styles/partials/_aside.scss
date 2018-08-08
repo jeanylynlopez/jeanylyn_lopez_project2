@@ -143,11 +143,31 @@
                 width: 100%;
                 padding: 15px 0;
                 margin: -100px auto;
-
             }
+            // @include break-point(small){
+            //     .pics-nav li:nth-child(2){
+            //         display: none;
+            //     }
+            // }
         }
     }
 }
+
+@include break-point(small) {
+    .latest-pics nav .pics-nav li:nth-child(2) {
+        display: none;
+    }
+    .latest-pics nav .pics-nav li:nth-child(3) {
+        display: none;
+    }
+    .latest-pics nav .pics-nav li:nth-child(4) {
+        display: none;
+    }
+    .latest-pics nav .pics-nav li:nth-child(5) {
+        display: none;
+    }
+}
+
 
 .latest-pics__container {
     margin: 0 auto;
@@ -157,6 +177,10 @@
     @include break-point(largeish){
         flex-direction: column;
     }
+}
+
+.pics-nav {
+    display: none;
 }
 
 // .latest-pics {

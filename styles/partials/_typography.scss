@@ -8,6 +8,12 @@ html {
     @include break-point(medium){
          font-size: 55%;
     }
+    @include break-point(small){
+        font-size: 50%;
+    }
+    @include break-point(smallest) {
+        font-size: 42%;
+    }
 }
 
 h1, h2, h3, .form__input, .form__submit {
@@ -21,6 +27,9 @@ h1, h2, h3, .form__input, .form__submit {
 h1 {
     font-size: 4.6rem;
     text-align: center;
+    @include break-point(smallest){
+        // font-size: 3.5rem;
+    }
 }
 
 h2 {
@@ -41,6 +50,9 @@ p {
     font-size: 2.4rem;
     font-weight: 400;
     line-height: 38px;
+    @include break-point(smallest){
+        line-height: 20px;
+    }
 }
 
 footer p {
@@ -49,6 +61,10 @@ footer p {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 38px;
+    @include break-point(smallest){
+        line-height: 20px;
+        font-size: 2rem;
+    }
 }
 
 // ===============
@@ -64,10 +80,10 @@ i {
 
 // ???Can I just make the html percentage smaller so it affects all the sizes???
 
-@media (max-width: 955px) {
+// @media (max-width: 955px) {
     
-    h3 {
-        font-size: 1.8rem; 
-    }
+//     h3 {
+//         font-size: 1.8rem; 
+//     }
 
-}
+// }
