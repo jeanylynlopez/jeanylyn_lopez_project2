@@ -148,6 +148,7 @@
 .picture-divider {
     display: flex;
     flex-wrap: wrap;
+    // width: 100%;
     .content {
         width: 25%;
         margin: 0;
@@ -200,15 +201,15 @@
     left: 0;
     right: 0;
     bottom: 0;
+    @include break-point(large){
+        display: none;
+    }
     @include break-point(medium){
         display: none;
     }
 }
 
-@include break-point(medium){
-    
 
-}
 
 // ===============
 // HAPPY CLIENTS SECTION
