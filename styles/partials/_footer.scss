@@ -5,6 +5,7 @@
 // ===============
 // CONTACT FOOTER SECTION
 // ===============
+
 .main-footer {
     display: flex;
     justify-content: center;
@@ -13,7 +14,6 @@
     @include break-point(medium) {
         flex-direction: column;
         margin: 50px 50px 50px 50px;
-        // justify-content: center;
     }
     .footer-section {
         width: 30%;
@@ -50,10 +50,6 @@
     border: none;
     margin-left: -40px;
     font-size: 18px;
-    @include break-point(smallest){
-        // margin-left: 0;
-    }
-
 }
 
 // ===============
@@ -107,14 +103,11 @@
     justify-content: space-around;
     .nav__link {
         text-decoration: none;
+        .nav__heading {
+            font-weight: 600;
+        }
     }
 }
-
-// @include break-point(mediumish){
-//     .footer-section .instagram {
-//         width: 10%;
-//     }
-// }
 
 // ================        
 // SECOND FOOTER

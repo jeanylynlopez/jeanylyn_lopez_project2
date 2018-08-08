@@ -438,6 +438,9 @@ ul {
     .content:hover .hover h2 {
       font-size: 2rem;
       padding: 25% 0; } }
+  @media (max-width: 680px) {
+    .content:hover .hover h2 {
+      display: none; } }
 
 .content:hover .hover p {
   color: #e6e2e2;
@@ -780,6 +783,8 @@ ul {
       display: none; } }
   .footer-nav .nav__link {
     text-decoration: none; }
+    .footer-nav .nav__link .nav__heading {
+      font-weight: 600; }
 
 .second-footer {
   text-align: center;

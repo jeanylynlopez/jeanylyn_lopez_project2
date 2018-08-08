@@ -7,7 +7,6 @@
     @include break-point(smallest){
         font-size: 2.8rem;
         line-height: 20px;
-        // margin: 0 auto;
     }
     span {
         color: $highlight-color;
@@ -18,14 +17,11 @@
 .about {
     padding: 100px;
     .article {
-        // width: 90%;
         margin: 0 auto;
         .article__text {
             text-align: center;
             margin: 60px 0;
             @include break-point(smallest){
-                // line-height: 20px;
-                // font-size: 2rem;
                 margin: 20px 0;
             }
         }
@@ -45,10 +41,6 @@
 // ===============
 // SERVICES SECTION
 // ===============
-
-// ???figure out wrappers???
-// ???how come the content isn't centered???
-// ???how come .list isn't centered???
 
 .services {
     padding: 100px 0;
@@ -143,19 +135,15 @@
 // ONE LINE PICTURE GRID
 // ===============
 
-// ???there's one pic that's larger in height than the rest when you look at it in chrome???
-
 .picture-divider {
     display: flex;
     flex-wrap: wrap;
-    // width: 100%;
     .content {
         width: 25%;
         margin: 0;
         padding: 0;
         position: relative;
         display: flex;
-        // flex-wrap: wrap;
     }
     .content__image {
         width: 100%;
@@ -185,6 +173,9 @@
         font-size: 2rem;
         padding: 25% 0;
     }
+    @include break-point(mediumish){
+        display: none;
+    }
 }
 
 .content:hover .hover p {
@@ -209,16 +200,9 @@
     }
 }
 
-
-
 // ===============
 // HAPPY CLIENTS SECTION
 // ===============
-
-// ???should it be padding or margin???
-// ??? how come the before and after pseudo elements aren't working???
-// ???can you use flexbox for the icons???
-// ???can we get the width of the text the same as the width on the about???
 
 .clients {
     @include break-point(small){
@@ -275,52 +259,3 @@
         }
     }
 }
-
-// ===============
-// MEDIA QUERY 955PX
-// ===============
-
-// @media (max-width: 955px) {
-
-//     .testimonials {
-//         .article {
-//             .article__image {
-//                 width: 80%;
-//             }
-//         }
-//     }
-//     .testimonials {
-//         .article {
-//             .article__content {
-//                 margin: 0;
-//                 .article__text {
-//                     font-size: 2rem;
-//                 }
-//             }
-//         }
-//     }
-
-//     .services {
-//         padding: 50px;
-//         .list {
-//             .list__item {
-//                 margin: 0;
-//                 .list__icon {
-//                     font-size: 3.5rem;
-//                 }
-//             }
-//         }
-//     }
-
-//     .services {
-//         .list {
-//             flex-direction: column;
-//             justify-content: center;
-//             .list__text {
-//                 width: 70%;
-//                 margin: 0 auto;
-//             }
-//         }
-//     }
-    
-// }  END OF 955px MEDIA QUERY

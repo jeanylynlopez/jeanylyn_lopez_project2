@@ -27,9 +27,6 @@ h1, h2, h3, .form__input, .form__submit {
 h1 {
     font-size: 4.6rem;
     text-align: center;
-    @include break-point(smallest){
-        // font-size: 3.5rem;
-    }
 }
 
 h2 {
@@ -77,13 +74,3 @@ i {
     font-weight: 400;
     line-height: 32px;
 }
-
-// ???Can I just make the html percentage smaller so it affects all the sizes???
-
-// @media (max-width: 955px) {
-    
-//     h3 {
-//         font-size: 1.8rem; 
-//     }
-
-// }
